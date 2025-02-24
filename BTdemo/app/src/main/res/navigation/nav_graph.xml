@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/help_Fragment">
+    <fragment
+        android:id="@+id/help_Fragment"
+        android:name="com.example.xiaocfanbtdemo.Help_Fragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help">
+        <action
+            android:id="@+id/action_help_to_client"
+            app:destination="@id/client_Fragment" />
+        <action
+            android:id="@+id/action_help_to_server"
+            app:destination="@id/server_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/client_Fragment"
+        android:name="com.example.xiaocfanbtdemo.Client_Fragment"
+        android:label="fragment_client"
+        tools:layout="@layout/fragment_client" />
+    <fragment
+        android:id="@+id/server_Fragment"
+        android:name="com.example.xiaocfanbtdemo.Server_Fragment"
+        android:label="fragment_server"
+        tools:layout="@layout/fragment_server" />
+</navigation>
